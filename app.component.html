@@ -1,0 +1,58 @@
+ <!-- <div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button type="button" class="btn btn-primary"
+      (click)="Oddnum =!Oddnum">Save</button>
+      <ul class="list-group">
+        <li
+        class="list-group-item"
+        *ngFor="let f of numr">
+      {{f}}
+      </li>
+      </ul>
+    </div>
+</div> 
+</div>
+   <hr><hr><hr> -->
+     
+     <!-- <div class="col-xs-12">
+      <button type="button" class="btn btn-primary"
+      (click)="Oddnum =!Oddnum">Save</button>
+      <ul class="list-group">
+        <li
+        class="list-group-item"
+        *ngFor="let f of numr">
+      {{f}}
+      </li>
+      </ul>
+    </div>  -->
+    
+    <button type="button" class="btn btn-primary"
+      (click)="Oddnum =!Oddnum">Save</button>
+      <ul class="list-group">
+        <div *ngIf="Oddnum"> 
+        <li
+        class="list-group-item"
+        *ngFor="let d of odd">
+      {{d}}
+      </li>
+     </div>
+     <div *ngIf="!Oddnum">
+      <li
+      class="list-group-item"
+      *ngFor="let e of even">
+    {{e}}
+  </li>
+
+     
+     <div *ngIf="!Oddnum">
+      <li
+    class="list-group-item"
+    *ngFor="let e of even">
+  {{e }}
+  </li>
+</div>
+ 
+ 
+<hr>
+   
